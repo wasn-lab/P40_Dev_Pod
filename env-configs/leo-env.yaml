@@ -1,0 +1,19 @@
+# 你的名字
+createdBy: leo
+#-----------------------------
+# DGX/charts/dev-pod/value_config
+
+# 請為你的kubernetes的namespace命名，用來分隔不同學生的環境，這個名稱也會用於創建屬於你的domain name網址
+# 例如: cc-env 你的環境就會是 https://leo-env.dgx.wasnlab.net
+namespace: leo-env
+
+# 填入你開發環境內要使用的Docker image，需要填寫完整docker image name跟tag
+# 例如: jupyter/docker-stacks-foundation:latest
+# docker_image: pytorch/pytorch:1.11.0-cuda11.3-cudnn8-devel -> degraded
+docker_image: hazdzz/dgx-torch:1.0.6
+
+# 是否要使用GPU
+gpu_enabled: true
+
+# 是否要使用共享記憶體（預設: false）
+shared_memory_enabled: true
