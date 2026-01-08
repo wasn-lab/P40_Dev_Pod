@@ -21,22 +21,26 @@
 <!-- tocstop -->
 ## 非常重要！！！！！！！！！！！！
 由於P40是放在外網，所以如果要用域名訪問的話，必須在自己的etc/hosts文件下面添加DNS記錄。
+
 訪問的時候要加port。http:30080 https:30443
+
 範例：https://argocd.p40.wasnlab.net:30443
+
 由於放在外網，所以有一定資安疑慮，請頻繁備份自己的資料！！！！！！！！
+
 ### Windows
 ```
 路徑：C:\Windows\System32\drivers\etc\hosts
 hosts文件添加
 140.115.54.239   argocd.p40.wasnlab.net
-140.115.54.239   example.p40.wasnlab.net  //example需要根據你env.yaml檔替換
+140.115.54.239   example.p40.wasnlab.net  # example需要根據你'name-env.yaml'檔替換，比如你的是leo-env.yaml 那就要改成leo-env.p40.wasnlab.net
 ```
 ### Linux|Mac
 ```
-路徑：\etc\hosts
+路徑：/etc/hosts
 hosts文件添加
 140.115.54.239   argocd.p40.wasnlab.net
-140.115.54.239   example.p40.wasnlab.net  //example需要根據你env.yaml檔替換
+140.115.54.239   example.p40.wasnlab.net  # example需要根據你'name-env.yaml'檔替換，比如你的是leo-env.yaml 那就要改成leo-env.p40.wasnlab.net
 ```
 ## What is P40 Dev Pod?
 The P40 Dev Pod is an experimental platform that allows students to freely choose the development environment they want to use.
