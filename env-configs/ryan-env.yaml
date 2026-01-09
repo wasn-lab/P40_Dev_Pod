@@ -4,7 +4,7 @@ createdBy: ryan
 # DGX/charts/dev-pod/value_config
 
 # 請為你的kubernetes的namespace命名，用來分隔不同學生的環境，這個名稱也會用於創建屬於你的domain name網址
-# 例如: cc-env 你的環境就會是 https://ryan-env.dgx.wasnlab.net:30443
+# 例如: cc-env 你的環境就會是 https://ryan-env.p40.wasnlab.net:30443
 namespace: ryan-env
 
 # 填入你開發環境內要使用的Docker image，需要填寫完整docker image name跟tag
