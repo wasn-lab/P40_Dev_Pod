@@ -1,0 +1,17 @@
+# 你的名字
+createdBy: leo
+#-----------------------------
+
+# 請為你的kubernetes的namespace命名，用來分隔不同學生的環境，這個名稱也會用於創建屬於你的domain name網址
+# 例如: leo-env 你的環境就會是 https://yolo-env.p40.wasnlab.net
+namespace: yolo-env
+
+# 填入你開發環境內要使用的Docker image，需要填寫完整docker image name跟tag
+# 例如: jupyter/docker-stacks-foundation:latest
+docker_image: nvcr.io/nvidia/pytorch:24.02-py3
+
+# 是否要使用GPU
+gpu_enabled: true
+
+# 是否要使用共享記憶體（預設: false）
+shared_memory_enabled: true
